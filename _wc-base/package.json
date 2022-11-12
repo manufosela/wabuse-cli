@@ -1,0 +1,46 @@
+{
+  "name": "wc-name",
+  "description": "Lit-Element webcomponent wc-name",
+  "version": "1.0.0",
+  "main": "wc-name.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/wc-name"
+  },
+  "author": "user",
+  "license": "LICENSE",
+  "keywords": [
+    "webcomponent",
+    "lit-element"
+  ],
+  "bugs": {
+    "url": "https://github.com/user/wc-name/issues"
+  },
+  "homepage": "https://github.com/user/wc-name",
+  "dependencies": {
+    "lit-element": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@webcomponents/webcomponentsjs": "^2.2.4",
+    "es-dev-server": "1.57.7",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "rollup": "^2.35.1",
+    "@rollup/plugin-babel": "^5.2.2",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-multi-input": "^1.1.1",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "build": "rm -rf build && mkdir build && rollup -c",
+    "start": "es-dev-server --app-index /demo/index.html --node-resolve --watch --open"
+  }
+}
