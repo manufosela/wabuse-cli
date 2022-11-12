@@ -1,6 +1,6 @@
 # wabuse
 
-LitElement New UX Tool of Web Development.
+Web Applications Built Using Standards Everywhere Tool
 Generate static web pages with links to js and css files that are stored in the `dist` folder.
 Oriented to HTML5, CSS, ES6 + and Web components standards through LitElement.
 Based in conventions vs configurations.
