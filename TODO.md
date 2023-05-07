@@ -8,7 +8,6 @@ Opciones:
 - colores: #582546 #f2cd00 #7a7e80
 - colores: #C3C9CC #7F8385 #434546 #B5C8D7 #DAF1F4
 
-- wabuse: wabuse is a "Witty Interface Tool UX" to develop SSG web sites.
 - colores: #1F3F43 #314F52 ?
 
 ## Actions to do

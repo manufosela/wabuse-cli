@@ -22,7 +22,7 @@ _[wabuse](https://www.npmjs.com/package/wabuse)_, the command line interface to 
 ### Generate scafolding
 
 ```bash
-    wabuse create-page scafolding [--languages 'lang1','lang2'[,...]] [--commonfiles 'file1','file2'[,...]]
+    wabuse scafolding [--languages 'lang1','lang2'[,...]] [--commonfiles 'file1','file2'[,...]]
 ```
 
 ### Generate new Page
@@ -39,7 +39,7 @@ _[wabuse](https://www.npmjs.com/package/wabuse)_, the command line interface to 
 
 ### Generate Build
 
-To generate estatic HTML pages
+To generate static HTML pages
 
 ```bash
     wabuse build [--port PORT] [--workdir WORKDIR]
