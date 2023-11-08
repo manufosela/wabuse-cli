@@ -1,7 +1,7 @@
 {
   "name": "wabuse-web",
   "version": "1.0.0",
-  "description": "@wabuse-cli Generator Static Website)",
+  "description": "@wabuse-cli Generator Static Website",
   "main": "index.js",
   "scripts": {
     "analyze": "wca analyze \"./components/**/*.js\" --format json --outFile custom-elements.json",
@@ -12,7 +12,7 @@
     "lint:fix": "eslint ./js --fix",
     "prestorybook": "npm run analyze",
     "start:strapi": "npm run strapi && webpack-dev-server --env.dev --mode development --open",
-    "start": "web-dev-server --app-index index.html --node-resolve --watch --open --port 8081",
+    "start": "node start-server.mjs",
     "start:dist": "web-dev-server --app-index index.html --node-resolve --watch --open --port 8082 --root-dir ../dist",
     "stop": "kill $(ps aux | grep 'node.*es-dev-server' | awk '{print $2}')",
     "storybook:build": "build-storybook",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/kairosds/products/kairos-web.git"
+    "url": "git+https://gitlab.com/__USER__/__REPONAME__.git"
   },
   "keywords": [
     "enjoy",
@@ -33,12 +33,12 @@
     "think",
     "try"
   ],
-  "author": "manufosela",
-  "license": "Copyright",
+  "author": "__USER__",
+  "license": "__LICENSE__",
   "bugs": {
-    "url": "https://gitlab.com/kairosds/products/kairos-web/issues"
+    "url": "https://gitlab.com/__USER__/__REPONAME__/issues"
   },
-  "homepage": "https://gitlab.com/kairosds/products/kairos-web#readme",
+  "homepage": "https://gitlab.com/__USER__/__REPONAME__#readme",
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"

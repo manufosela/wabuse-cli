@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+:root {
+  --primary-100:#FF5722;
+  --primary-200:#ff8a50;
+  --primary-300:#fff3b0;
+  --accent-100:#FFC107;
+  --accent-200:#916400;
+  --text-100:#212121;
+  --text-200:#484848;
+  --bg-100:#F5F5F5;
+  --bg-200:#ebebeb;
+  --bg-300:#c2c2c2;
+}
+
 .invisible {
   display:none;
 }

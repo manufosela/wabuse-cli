@@ -1,20 +1,19 @@
 import data from '../../json/_base.json.js'; /* FUENTE DE DATOS JSON */
 import {CommonTpl} from './common.html.mjs';
 
+CommonTpl.detectLanguage();
 const lang = CommonTpl.LANG;
 
 const pageData = data._base[lang];
-window.WabuseDATA.pageData = data._base[lang];
 
 
 const HTMLbody = /* html */`
-    ${CommonTpl.titleTpl(pageData.header)}
     <main role="main" class="homepage">
-      <h1>CAMBIAR POR EL CONTENIDO HTML DE LA PÁGINA</h1>
-      <mi-componente1></mi-componente1>
+      <h1>${pageData.header.title}</h1>
+      <img src="${pageData.header.img}" alt="${pageData.header.title}">
     </main>
     <footer>
-      wabuse - ${new Date().getFullYear()}
+      &copy;wabuse - ${new Date().getFullYear()}
     </footer>
 `;
 

@@ -1,4 +1,5 @@
-const { devPackages, packages } = require('../lib/packages.json.js');
+const { getPackagesDependencies } = require('../lib/packages-json.js');
+const { devPackages, packages } = getPackagesDependencies();
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
