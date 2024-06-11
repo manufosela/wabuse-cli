@@ -1,11 +1,18 @@
 # wabuse
 
+**[wabuse](https://www.npmjs.com/package/wabuse)** is a set of tools to create static sites using standard javascript.
 Web Applications Built Using Standards Everywhere Tool
 Generate static web pages with links to js and css files that are stored in the `dist` folder.
-Oriented to HTML5, CSS, ES6 + and Web components standards through LitElement.
+Oriented to HTML5, CSS, ES6 + and Web components standards through Lit.
 Based in conventions vs configurations.
 
-**[wabuse](https://www.npmjs.com/package/wabuse)** is a set of tools to create static sites using standard javascript.
+All JavaScript code is executed on the client-side.
+
+All JavaScript code located in the files within /js/pages named *.html.mjs is executed on the client-side but only in the development environment. This code dynamically generates the page content, and during the build process, an *.html file is generated that contains the content created by the JavaScript.
+
+The JavaScript code that runs on the front-end will be in the *.js files within the /js and /js/lib directories.
+
+Be careful where you place your JavaScript code. If you place it in the wrong file, it might not be displayed on the front-end, even if it works in the development environment.
 
 ## Tools
 
