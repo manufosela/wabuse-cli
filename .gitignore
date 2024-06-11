@@ -1,2 +1,17 @@
-node_modules
-.vscode
+## npm
+node_modules/
+*/node_modules/*
+*/npm-debug.log
+
+## testing
+/__snapshots__/
+/coverage/
+
+# build
+dist/
+
+## system files
+.DS_Store
+.idea
+
+.vscode/
