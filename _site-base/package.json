@@ -1,7 +1,6 @@
 {
-  "name": "wabuse-web",
-  "version": "1.0.0",
-  "description": "@wabuse-cli Generator Static Website",
+  "name": "__SITENAME__",  "version": "1.0.0",
+  "description": "__DESCRIPTION__",
   "main": "index.js",
   "scripts": {
     "analyze": "wca analyze \"./components/**/*.js\" --format json --outFile custom-elements.json",
@@ -11,9 +10,9 @@
     "lint": "eslint ./js",
     "lint:fix": "eslint ./js --fix",
     "prestorybook": "npm run analyze",
-    "start:strapi": "npm run strapi && webpack-dev-server --env.dev --mode development --open",
+    "start:strapi": "npm run strapi & vite --mode development --open",
     "start": "node start-server.mjs",
-    "start:dist": "web-dev-server --app-index index.html --node-resolve --watch --open --port 8082 --root-dir ../dist",
+    "start:dist": "vite preview --port 8082",
     "stop": "kill $(ps aux | grep 'node.*es-dev-server' | awk '{print $2}')",
     "storybook:build": "build-storybook",
     "storybook": "start-storybook -s ./src -p 9001",
@@ -28,10 +27,7 @@
     "url": "git+https://gitlab.com/__USER__/__REPONAME__.git"
   },
   "keywords": [
-    "enjoy",
-    "feel",
-    "think",
-    "try"
+    "__KEYWORDS__"
   ],
   "author": "__USER__",
   "license": "__LICENSE__",

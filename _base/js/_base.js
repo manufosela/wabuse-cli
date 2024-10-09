@@ -7,3 +7,6 @@ import './lib/common';
 
 // Load libraries
 // import './lib/the_library_that_i_need';
+
+/*** MAIN CODE ***/
+// Put your main code from page here

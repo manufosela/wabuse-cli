@@ -9,17 +9,11 @@ function generarColorContraste() {
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
 
-  // Se calcula el valor de luminosidad relativa (L) según la fórmula de la W3C
-  const luminosidad = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-
-  // Se determina si el color es oscuro o claro según su luminosidad relativa
-  const esOscuro = luminosidad < 0.5;
-
   // Se devuelve el color con el formato #RRGGBB
-  return `#${  [r, g, b]
+  return `#${[r, g, b]
     .map(c => c.toString(16).padStart(2, '0'))
     .join('')
-     }${esOscuro ? 'FF' : '00'}`;
+    }`;
 }
 
 // Variables de configuración de colores en settings.json

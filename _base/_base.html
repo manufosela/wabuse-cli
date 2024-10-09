@@ -12,10 +12,15 @@
     <link rel="stylesheet" href="/css/_base.css" />
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <template data-wabuse data-src="/templates/head.tpl.html"></template>
     <!-- __ALTERNATES__ -->
   </head>
 
   <body>
-    <script src="/js/pages/_base.html.mjs" type="module"></script>
+    <!-- YOU CAN PUT STATIC HTML HERE IF YOU WANT -->
+    <script id="index" src="/js/pages/_base.html.mjs" type="module"></script><!-- This code will be replaced by dynamic code during development, but will be static once the build is done -->
+    <!-- YOU CAN PUT STATIC HTML HERE IF YOU WANT -->
+    <!-- You can also add other <script id="ID" src="/js/pages/page.html.mjs" type="module"></script> tags to include more dynamic content during development -->
   </body>
 </html>

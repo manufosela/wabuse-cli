@@ -1,0 +1,30 @@
+<header>
+  <header-logomenu logo="/assets/images/wabuse.png" logo-url="/index.html">
+    <nav>
+      <ul>
+        <li id="link1">
+          <a href="/${lang}/menu1.html" tabindex="0">${grupoMenu.menu1}</a>
+        </li>
+        <li id="link2">
+          <a href="/${lang}/menu2.html" tabindex="0">${grupoMenu.menu2}</a>
+        </li>
+        <li id="link3">
+          <a href="/${lang}/menu3.html" tabindex="0">${grupoMenu.menu3}</a>
+        </li>
+        <li id="login">
+        </li>
+      </ul>
+    </nav>
+  </header-logomenu>
+  <firebase-loginbutton
+    id="myLoginButton"
+    api-key="__FIREBASE_API_KEY__"
+    domain="__FIREBASE_DOMAIN__"
+    zone="__FIREBASE_ZONE__"
+    messaging-sender-id="__FIREBASE_MESSAGING_SENDER_ID__"
+    app-id="__FIREBASE_APP_ID__"
+    class="loginbutton"
+    show-icon
+  ></firebase-loginbutton>
+  <firebase-crud id="myCrud" reference-id="myLoginButton"></firebase-crud>  
+</header>

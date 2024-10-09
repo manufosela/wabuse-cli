@@ -1,18 +1,17 @@
-// import navigationMenu from './other.json.js';
+import header from './header.json.js';
+import footer from './footer.json.js';
 
 export default {
-  '_base': {
+  'index': {
     'en': {
-      'header': {
-        'title': 'TITLE _base 1',
-        'img': '/assets/images/wabuse.png'
-      }
+      'img': '/assets/images/wabuse.png',
+      'header': header.en,
+      'footer': footer.en,
     },
     'es': {
-      'header': {
-        'title': 'TITULO _base 1',
-        'img': '/assets/images/wabuse.png'
-      }
+      'img': '/assets/images/wabuse.png',
+      'header': header.es,
+      'footer': footer.es,
     }
   }
 };
